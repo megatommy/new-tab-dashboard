@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Regular.otf.woff') format('woff');
+}
+
+body {
+    background-color: #ede0c8;
+    background-image: url(debut-light.png);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container-fluid {
+    margin: auto 5%;
+}
+
+.center {
+    text-align: center;
+}
+
+#todo-input {
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #BDADA9;
+    width: 100%;
+}
+#todo-input:focus {
+    outline: none;
+}
+
+.todo-font {
+    font-size: 2em;
+    color: #555;
+}
+
+
+.todo {
+    display: block;
+}
+
+.todo-del {
+    vertical-align: middle;
+    color: #555;
+    opacity: 0.3;
+    transition: all 0.3s;
+    font-size: 0.7em;
+}
+.todo-del:hover {
+    opacity: 1;
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ays,
+.ays:hover 
+{
+    color: #e74c3c;
+    opacity: 1;
+}
+
+@-webkit-keyframes ani-latest {
+    0% {text-shadow: 0 0 0 black;}
+    50% {text-shadow: 0 0 5px black;}
+    100% {text-shadow: 0 0 0 black;}
+}
+
+.todo-latest {
+    -webkit-animation: ani-latest 0.5s;
+}
+.daily-font {
+    font-size: 1.5em;
+}
+.daily-font .glyphicon {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.daily-font .glyphicon-remove {
+    color: #e74c3c;
+}
+
+.daily-font .glyphicon-ok {
+    color: #2ecc71;
+}
+
+#daily-holder td, 
+#daily-holder th, 
+#daily-holder tbody tr:last-child 
+{
+    border: none;
+}
+
+#daily-holder tr {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #D6CCB8;
+}

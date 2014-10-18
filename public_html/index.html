@@ -1,0 +1,57 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nieuw tabblad</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="storejson2.min.js"></script>
+        
+        <script>
+            /*
+             * Edit the columns here
+             * When adding or deleting a column, all the values will be resetted
+             */
+            var columns = [
+                "pushups",
+                "situps",
+                "feed the cat",
+                "walk the dog"
+            ];
+        </script>
+        <script src="main.js"></script>
+    </head>
+    <body onload="init();">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="center">New Tab Dashboard</h1>
+                <!-- ToDo -->
+                <div class="col-md-3 todo-font" style="padding-top: 6px;">
+                        <div class="col-md-12" style='margin-bottom: 20px;'>
+                            <form action="javascript:void(0);" id='todo-form'>
+                                <input type="text" id="todo-input" placeholder="New todo..." autocomplete="off">
+                            </form>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="todo-holder"></div>
+                        </div>
+                </div>
+                
+                <!-- Daily -->
+                <div class="col-md-8 col-md-offset-1 daily-font">
+                    <table class="table" id="daily-holder">
+                        <thead></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
