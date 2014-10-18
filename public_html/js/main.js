@@ -2,7 +2,7 @@ function capital(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function init() {
+$(document).ready(function(){
     //event binding
     $("#todo-form").submit(function() {
         todo_array.push(capital($('#todo-input').val()));
@@ -70,7 +70,8 @@ function init() {
     //lists aanroepen
     list_todos();
     list_daily();
-}
+});
+
 
 var todo_array;
 function list_todos(just_added) {

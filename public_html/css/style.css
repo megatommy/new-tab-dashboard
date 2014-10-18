@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url('fonts/SourceSansPro-Regular.otf.woff') format('woff');
+    src: url('../fonts/SourceSansPro-Regular.otf.woff') format('woff');
 }
 
 body {
     background-color: #ede0c8;
-    background-image: url(debut-light.png);
+    background-image: url(../debut-light.png);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
